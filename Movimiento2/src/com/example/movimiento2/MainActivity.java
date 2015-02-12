@@ -47,25 +47,4 @@ public class MainActivity extends Activity {
 		
 		return true;
 	}
-	
-	public boolean onKeyDown(int keyCode,KeyEvent event){
-        if(keyCode==KeyEvent.KEYCODE_S){
-            imagen.setY(imagen.getY()+5);
-            event.startTracking();
-        }
-        if(keyCode==KeyEvent.KEYCODE_W){
-        	imagen.setY(imagen.getY()-5);
-            event.startTracking();
-        }
-        if(keyCode==KeyEvent.KEYCODE_D){
-        	imagen.setX(imagen.getX()+5);
-            event.startTracking();
-        }
-        if(keyCode==KeyEvent.KEYCODE_A){
-        	imagen.setX(imagen.getX()-5);
-            event.startTracking();
-        }
-
-        return false;
-    }
 }
