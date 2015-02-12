@@ -35,24 +35,9 @@ public class MainActivity extends Activity {
 		System.out.println(y);
 		
 		switch (e.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			/* float x2 = imagen.getX();
-			float y2 = imagen.getY();
-			
-			if (x >= x2) {
-				x2 += 5;
-			} else {
-				x2 -= 5;
-			}
-			
-			if (y >= y2 + 100) {
-				y2 += 5;
-			} else {
-				y2 -= 5;
-			} */
-			
-			imagen.setX(x-20);
-			imagen.setY(y-20);
+		case MotionEvent.ACTION_DOWN:			
+			imagen.setX(x-50);
+			imagen.setY(y-50);
 			
 			System.out.println("ImagenX: " + imagen.getX());
 			System.out.println("ImagenY: " + imagen.getY());
